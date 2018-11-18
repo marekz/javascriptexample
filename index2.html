@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>document</title>
+        <style>
+        
+          .contentGallery img {
+            width: 250px;
+          }
+
+          .sliderContener {
+            width: 100%;
+          }
+
+          .leftButton {
+            width: 50px;
+            float: left; 
+          }
+
+          .rightButton {
+            width: 50px;
+            float: left; 
+          }
+
+          .hide {
+            display: none;
+          }
+
+          .bigPicutre img {
+            width: 400px;
+          }
+
+        </style>
+    </head>
+<body>
+  <h1>Moja galeria</h1>
+  <div class="menu">
+    <button onclick="hideAll()">Ukryj wszystkie</button>
+    <button onclick="displayAll()">Pokaż wszystkie</button>
+    <button onclick="hideNoAlt()">Ukryj bez alt'a</button>
+  </div>
+  <div class="contentGallery">
+      <img src='./images/moto1.jpg' id="img1" class="img" alt="img1"  />
+      <img src='./images/moto2.jpg' id="img2" class="img" alt="" />
+      <img src='./images/moto3.png' id="img3" class="img" alt="" />
+      <img src='./images/moto4.jpg' id="img4" class="img" alt="img4" />
+      <img src='./images/moto5.jpg' id="img5" class="img" alt="img5" />
+      <img src='./images/moto6.jpg' id="img6" class="img" alt="" />    
+  </div>
+
+  <div class="bigPicutre">
+    <img src='' alt='' class="picture"/>
+  </div>
+
+  <div class="sliderContener">
+      <div class="leftButton" style="width:100px; float: left">
+        <img src="./images/prev.png" />
+      </div>
+      <div class="slider" style="float: left">
+          <img src='' alt='' class="slide" style="width:250px"/>
+      </div>
+      <div class="rightButton" style="width:100px; float:left">
+          <img src="./images/next.png" /></div>
+  </div>
+
+  <script src="index2.js"></script>
+</body>
+</html>

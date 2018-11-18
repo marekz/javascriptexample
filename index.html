@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<script src="fetchFlickr.js"></script>
+<title>document</title>
+</head>
+<body>
+<div id="image-list"></div>
+<div class="rotator" style="width:500px">
+<div class="leftButton" style="width:50px; float:left">
+<img src="./images/prev.png" />
+</div>
+<img class="images-slide"  style="width:400px; float:left"/>
+<div class="rightButton">
+<img src="./images/next.png"  style="width:50px; float:left"/></div>
+</div>
+<div style="width:100%; clear: both"></div>
+<div class="container">
+<div class="content">
+<input id="search" stype="text" placeholder="search text"/>
+<button id="submit" onclick="getPhotos()">Submit</button>
+<div id="outputDiv"></div>
+</div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
